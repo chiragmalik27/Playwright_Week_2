@@ -15,6 +15,7 @@ test("Registeration" , async({page}) => {
     await page.getByPlaceholder('Mobile Number').fill("9501480672")
     expect(page.getByPlaceholder('Mobile Number')).toHaveValue('9501480672')
     await page.locator('//input[@class="subjects-auto-complete__input"]').fill("Computer Science")
+    await page.keyboard.press('ArrowDown')
     await page.keyboard.press('Enter')
     await page.locator('//input[@id="hobbies-checkbox-1"]').check()
     await page.locator('//input[@id="hobbies-checkbox-3"]').check()

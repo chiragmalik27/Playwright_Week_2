@@ -31,9 +31,8 @@ test("Reg Form 2", async({page}) => {
     await expect(page.locator('(//span[@class="select2-selection select2-selection--single"])[2]')).toContainText('12');
     await expect(page.locator('(//span[@class="select2-selection select2-selection--single"])[3]')).toContainText('30');
     await page.locator('//input[@id="vfb-3"]').fill("33")
-
+    await page.waitForTimeout(2000)
     await page.locator('//input[@id="vfb-4"]').click()
-    await 
     await page.screenshot({path : 'screenshot/Submit.png'})
     // await expect(page).toHaveScreenshot('Submit.png', { fullPage: true });
     
