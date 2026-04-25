@@ -1,0 +1,62 @@
+{
+	"Data": {
+		"valid": [
+			{
+				"firstName": "Chirag",
+				"lastName": "Malik",
+				"email": "chirag.malik@example.com",
+				"gender": "Male",
+				"mobile": "9501480672",
+				"subjects": ["Computer Science"],
+				"hobbies": ["Sports", "Music"],
+				"picturePath": "tests/uploadFiles/file1.png",
+				"currentAddress": "Chandigarh University",
+				"state": "NCR",
+				"city": "Delhi"
+			},
+			{
+				"firstName": "Ananya",
+				"lastName": "Sharma",
+				"email": "ananya.sharma@example.com",
+				"gender": "Female",
+				"mobile": "9876543210",
+				"subjects": ["Maths", "English"],
+				"hobbies": ["Reading"],
+				"picturePath": "tests/uploadFiles/file1.png",
+				"currentAddress": "Sector 22, Chandigarh",
+				"state": "Uttar Pradesh",
+				"city": "Lucknow"
+			}
+		],
+		"invalid": [
+			{
+				"firstName": "",
+				"lastName": "",
+				"email": "invalid-email-format",
+				"gender": "Male",
+				"mobile": "12345",
+				"subjects": ["Computer Science"],
+				"hobbies": ["Sports"],
+				"picturePath": "tests/uploadFiles/file1.png",
+				"currentAddress": "",
+				"state": "NCR",
+				"city": "Delhi",
+				"invalidReason": "Missing required names and invalid mobile/email"
+			},
+			{
+				"firstName": "Rohit",
+				"lastName": "Kumar",
+				"email": "rohit.kumar@",
+				"gender": "Male",
+				"mobile": "ABCDEFGHIJ",
+				"subjects": [],
+				"hobbies": [],
+				"picturePath": "tests/uploadFiles/file1.png",
+				"currentAddress": "Noida",
+				"state": "",
+				"city": "",
+				"invalidReason": "Invalid email, non-numeric mobile, and missing state/city"
+			}
+		]
+	}
+}

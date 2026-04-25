@@ -7,3 +7,4 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 /tests/ClassWork/
+/tests/api_testing/
