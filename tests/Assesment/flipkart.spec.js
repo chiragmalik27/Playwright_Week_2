@@ -24,8 +24,12 @@ test('flipkart', async({page, context}) => {
     let price = await newPage.locator('//div[@class="v1zwn21l v1zwn20 _1psv1zeb9 _1psv1ze0"]').innerText()
 
     await expect(title).toBeTruthy();
+    expect(title.length).toBeGreaterThan(0);
     await expect(price).toBeTruthy();
+    expect(price.length).toBeGreaterThan(0);
     console.log(title + ' ' + price)
+
+    await newPage.locator('(//div[@class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a"])[4]').click()
 
     let sheet = book.getWorksheet("Sheet1");
 
